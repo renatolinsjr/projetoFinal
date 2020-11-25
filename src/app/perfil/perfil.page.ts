@@ -19,6 +19,7 @@ export class PerfilPage implements OnInit {
     name: '',
     email: '',
     senha: '',
+    senha2:'',
     class: {
       class: 0
     },
@@ -125,7 +126,12 @@ export class PerfilPage implements OnInit {
       },
       updatedAt: Date.now()
     }
-    this.updateProfile(this.userUID, dataUser);
+   const isPasswordEqual = model['senha'] === model['senha2'];
+    if(isPasswordEqual) {
+        this.updateProfile(this.userUID, dataUser);
+    } else {
+        this.showAlert('Senhas divergentes!')
+    } 
   }
 
   saveClass(model: User){
@@ -176,7 +182,7 @@ export class PerfilPage implements OnInit {
 
   async showAlert(msg) {
     const alert = await this.alertCtrl.create({
-      header: 'Parabéns!',
+      header: '',
       message: msg,
       cssClass: 'alert-custom-class',
       animated: true,

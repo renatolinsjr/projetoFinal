@@ -19,6 +19,7 @@ export class AutoavaliacaoPage implements OnInit {
     name: '',
     email: '',
     senha: '',
+    senha2: '',
     class: {
       class: 0
     },
@@ -124,6 +125,7 @@ export class AutoavaliacaoPage implements OnInit {
       name: model['name'],
       email: model['email'],
       senha: model['senha'],
+    
       class: {
         class: model['class'] || 0
       },

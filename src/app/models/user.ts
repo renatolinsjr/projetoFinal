@@ -2,6 +2,7 @@ export class User {
   name: string;
   email: string;
   senha: string;
+  senha2: string;
   class?: {
     class: number;
   };
