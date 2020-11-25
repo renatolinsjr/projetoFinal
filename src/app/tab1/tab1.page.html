@@ -1,0 +1,112 @@
+<ion-content class="ion-padding">
+  <ion-fab slot="end" slot="fixed">
+    <ion-fab-button size="small" class="bgBtn" (click)="logout()">
+      <ion-icon name="exit"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-slides pager="true" [options]="slideOpts" class="margin-topo">
+    
+    <ion-slide>
+      <ion-card >
+        <ion-card-header>
+          <ion-card-title>O que é Coronavírus?</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content>
+         O Coronavírus faz parte de um grande família viral que causa infecções respiratórias em seres humanos e animais.
+         Em 7 de Janeiro de 2020, foi descoberto um noto tipo de coronavírus, até então desconhecido, o Covid-19.         
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card >
+        <ion-card-header>
+          <ion-card-title>O que é COVID-19?</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content>         
+          A COVID-19 é uma doença respiratória causada pelo coronavírus (SARS-CoV-2).
+          Apresenta um quadro clínico que varia de infecções assintomáticas a quadros respiratórios graves.
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card >
+        <ion-card-header>
+          <ion-card-title>Quais são os sintomas?</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content>         
+         Os sintomas da COVID-19 variam de um simples resfriado até uma pneumonia severa. 
+         Sendo os sintomas mais comuns:
+         <strong>
+          <br>• Tosse
+          <br>• Febre
+          <br>• Coriza
+          <br>• Dor de garganta
+          <br>• Dificuldade para respirar
+         </strong>
+         </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Como é transmitido?</ion-card-title>
+      </ion-card-header>    
+      <ion-card-content>       
+        A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de:
+       <strong>
+        <br>• Toque de mão
+        <br>• Gotículas de saliva
+        <br>• Espirro
+        <br>• Tosse
+        <br>• Objetos ou superfícies contaminadas
+       </strong>
+       </ion-card-content>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title>Como se proteger?</ion-card-title>
+      </ion-card-header>    
+      <ion-card-content>       
+        Para evitar a propagação da COVID-19:
+       <strong>
+        <br>• Lave suas mãos com frequência
+        <br>• Mantenha distância de pessoas
+        <br>• Evite tocar no rosto
+        <br>• Utilize máscaras
+        <br>• Evite sair de casa
+       </strong>
+       </ion-card-content>
+    </ion-card>
+  </ion-slide>
+
+</ion-slides>
+
+</ion-content>
+
+<ion-footer mode="ios" translucent="true" class="ion-no-border">
+  <div class="toBottom">
+    <ion-grid>
+      <ion-row class="dataTable">
+        <ion-col class="ion-text-center">
+          <ion-label class=""> <strong>Coronavírus</strong></ion-label>
+          <p><strong> Ericka Gomez</strong></p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-label class=""> <strong>Versão</strong></ion-label>
+          <p><strong> 1.0 </strong></p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-label class=""> <strong>Fonte Api pública:</strong></ion-label>
+          <p>https://covid19-brazil-api.now.sh/api/report/v1</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-footer>

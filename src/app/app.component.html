@@ -1,0 +1,86 @@
+<!-- <ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app> -->
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>CovAway</ion-list-header>
+          <ion-note class="labelColor">
+            Olá, {{ myName }}!
+          </ion-note>
+
+        <ion-menu-toggle auto-hide="false">
+
+          <ion-item lines="none" (click)="local()">
+            <ion-icon slot="start" name="earth"></ion-icon>      
+            <ion-label>
+              <ion-label>Proximidade de Contato</ion-label>
+            </ion-label>
+          </ion-item>
+
+          <ion-item lines="none" (click)="perfil()">
+            <ion-icon slot="start" name="person"></ion-icon>
+            <ion-label>                
+              <ion-label>Perfil</ion-label>
+            </ion-label>
+          </ion-item>
+
+          <ion-item lines="none" (click)="autoavaliacao()">
+            <ion-icon slot="start" name="create"></ion-icon>
+            <ion-label>                
+              <ion-label>Autoavaliação</ion-label>
+            </ion-label>
+          </ion-item>
+
+        </ion-menu-toggle>
+
+        <ion-item lines="none" (click)="showSobre()">
+          <ion-icon slot="start" name="information-circle"></ion-icon>
+          <ion-label>                
+            <ion-label>Sobre</ion-label>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+        <div [hidden]="about" class="toBottom">
+          <ion-grid>
+            <ion-row class="noPaddingBottom">
+              <ion-col size="4" class="noPaddingBottom ion-text-center ion-text-wrap">
+                <ion-label class=""> <strong>CovAway</strong></ion-label>
+                <p><img src="../../assets/imagem/pinvirusmod.svg" class="logoIcon icoStyle svg"></p>
+              </ion-col>
+              <ion-col size="4" class="noPaddingBottom colCentral ion-text-center ion-text-wrap">
+                  <ion-label class=""> <strong>Versão:</strong></ion-label>
+                <p><strong> 1.0 </strong></p>
+              </ion-col>
+              <ion-col size="4" class="noPaddingBottom ion-text-center ion-text-wrap">
+                <ion-label class=""> <strong>Developed by:</strong></ion-label>
+                <p>Ericka Gomes</p>
+              </ion-col>
+              <ion-row size="4" class="noPaddingBottom rowCentral ion-text-center ion-text-wrap">
+                  <ion-label class=""> <strong>Contato:</strong> erickagomes@souunisuam.com.br</ion-label>
+              </ion-row>
+            </ion-row>
+          </ion-grid>
+        </div>
+
+      </ion-content>
+
+      <!-- Rodapé -->
+      <ion-footer class="ion-no-border">        
+        <ion-item class="logoutPadding" lines="none" detail="false">
+          <ion-icon slot="start" name="log-out"></ion-icon>
+          <ion-label (click)="logout()">
+            Sair
+          </ion-label>
+        </ion-item>    
+      </ion-footer>
+      <!-- Rodapé -->
+
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

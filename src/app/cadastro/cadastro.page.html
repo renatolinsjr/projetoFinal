@@ -1,0 +1,33 @@
+
+<ion-content class="ion-padding">
+
+<div>
+  <h1></h1>
+</div>
+
+<ion-grid>
+  <form class="acesso">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input class="borda" name="name" type="text" [(ngModel)]="userModel.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">E-mail</ion-label>
+        <ion-input class="borda" name="login" type="email" [(ngModel)]="userModel.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Senha</ion-label>
+        <ion-input class="borda" name="senha" type="password" [(ngModel)]="userModel.senha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button class="colorBtn" expand="full" type="submit" (click)="insereUsuario(userModel)">Cadastrar</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button class="bgBtn" expand="full" (click)="loginPage()">Já tenho cadastro</ion-button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-grid>
+
+</ion-content>

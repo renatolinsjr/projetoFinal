@@ -1,0 +1,102 @@
+.myGroup{
+    width: 100%;
+    height: 160px;
+    background: #006666;
+}
+
+.userPart{
+    color: #006666;
+    font-weight: 900;
+}
+
+.iconEye{
+    font-size: 24px;
+    padding-left: 4px;
+    vertical-align: middle;
+}
+
+.item {
+    color: rgb(90, 90, 90);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    label {
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      font-size: 16px;
+      color: #006666;
+    }
+}
+
+.verticalAlign {
+    vertical-align: middle;
+}
+
+.selectPadding{
+    padding-top: 0;
+}
+
+.classifiCor {
+    color: #428cff !important;
+    fill:  #428cff !important;
+}
+
+.classiAlto {
+    color: #e04055 !important;
+    fill:  #e04055 !important;
+}
+
+.classiMedio {
+    color: #ffcc00 !important;
+    fill:  #ffcc00 !important;
+}
+
+.classBaixo {
+    color: #29c467 !important;
+    fill:  #29c467 !important;
+}
+
+svg{
+    width: 40px;
+    height: 40px;
+}
+
+.grifar {
+    color: #006666;
+    font-weight: bolder;
+}
+
+.neutro {
+    color: grey;
+}
+
+ion-header {
+    // --ion-background-color: linear-gradient(197deg, #e6ffff 0%, #76cfff 13.5%, #229CBD 33.33%, #00CCCC 100%);
+    --ion-background-color:#006666;
+}
+
+ion-toolbar {
+    color: #F4F4F4;
+}
+
+ion-content {
+    --ion-background-color: #EFFFFF;
+}
+
+element.style {
+    left: 0%;
+}
+
+.range-tick {
+    width: 14px !important;
+    height: 14px !important;
+    --knob-border-radius: 50% !important;
+    top: calc((var(--height) - var(--bar-height)) / 2.1) !important;
+}
+
+ion-icon {
+    color: #006666;
+}
+
+ion-checkbox {
+    --border-color: #006666;
+}

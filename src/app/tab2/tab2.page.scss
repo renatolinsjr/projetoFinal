@@ -1,0 +1,37 @@
+ion-content{
+    // --background: url(/assets/imagem/fundocasos.jpg)0 0/100% 100% no-repeat;
+}
+
+.azul{
+    color: #58ACFA;
+}
+
+.vermelho{
+    color: rgb(255, 81, 81);
+}
+
+.verde{
+    color: rgb(57, 126, 23);
+}
+
+.typeNumber{
+    font-size: 21px;
+}
+
+.dataTable{
+    background: #2d2d2d;
+}
+
+ion-card{
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px #58ACFA;
+}
+
+ion-list{
+    background: transparent !important;
+}
+
+.myPadding{
+    padding-left: 16px;
+    padding-right: 16px;;
+}

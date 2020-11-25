@@ -1,0 +1,69 @@
+ion-content{
+    // --background: url(/assets/imagem/fundologin.jpg)0 0/100% 100% no-repeat;
+    // --background: linear-gradient(197deg, #e6ffff 0%, #229CBD 33.33%, #00CCCC 100%);
+    --background:#EFFFFF;
+}
+
+.acesso{
+    opacity: 0.8;
+    margin-top: 40px;
+    color: #EFFFFF
+}
+
+ion-item{
+    margin-bottom: 10px;
+}
+
+ion-item{
+    border-radius: 8px;
+}
+
+ion-button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px !important;
+    font-weight: 400;
+}
+
+.colorBtn{
+    color: #EFFFFF;
+    border: solid;
+    border-width: 1;
+    border-color:#EFFFFF;
+    --background: #006666;
+}
+
+.bgBtn{
+    color: #006666;
+    border: solid;
+    border-width: 1;
+    border-color: #006666;
+    --background: transparent;
+}
+
+.logoIcon {
+    color: #428cff !important;
+    fill:  #428cff !important;
+}
+
+.icoStyle {
+    width: 20%;
+    height: auto;
+    align-items: baseline;
+}
+
+.divLogo {
+    display: flex;
+    padding-top: 50px;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+}
+
+svg {
+    width: 80px;
+    height: 80px;
+    color: #428cff !important;
+    fill:  #428cff !important;
+    stroke: #428cff !important;
+}

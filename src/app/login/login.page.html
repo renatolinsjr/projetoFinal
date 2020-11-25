@@ -1,0 +1,29 @@
+<ion-content class="ion-padding">
+
+  <div class="divLogo">
+    <img src="../../assets/imagem/pinvirus.svg" class="logoIcon icoStyle">
+  </div>
+
+  <ion-grid>
+    <form class="acesso">
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label position="stacked">E-mail</ion-label>
+          <ion-input class="borda" name="login" type="text" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Senha</ion-label>
+          <ion-input class="borda" name="senha" type="password" [(ngModel)]="senha"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-button class="colorBtn" expand="full" type="submit" (click)="loginUsuario()">Entrar</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button class="bgBtn" expand="full" (click)="cadastroPage()">Cadastrar-se</ion-button>
+        </ion-item>
+      </ion-list>
+    </form>
+  </ion-grid>
+  
+</ion-content>
+    
