@@ -19,7 +19,7 @@ export class AutoavaliacaoPage implements OnInit {
     name: '',
     email: '',
     senha: '',
-    senha2: '',
+    senha2:'',
     class: {
       class: 0
     },
