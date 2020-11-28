@@ -29,24 +29,29 @@ export class CadastroPage implements OnInit {
   }
 
   insereUsuario(){
-    this.autenticacaoService.insereNofireBase(this.userModel.email, this.userModel.senha)
-    .then((res)=>{
-      if(res){
-        console.log('ResUser: ', res);
-        let uid = res.user.uid;
-        this.autenticacaoService.createProfile(this.userModel, uid);
+    
+    if(this.userModel.senha == this.userModel.senha2){
+      this.autenticacaoService.insereNofireBase(this.userModel.email, this.userModel.senha)
+      .then((res)=>{
+        if(res){
+          console.log('ResUser: ', res);
+          let uid = res.user.uid;
+          this.autenticacaoService.createProfile(this.userModel, uid);
+          this.userModel = new User();
+          this.storage.set('userUID', res.user.uid);
+          this.toastServ.toastMsg('Cadastrado com sucesso!');
+          this.router.navigateByUrl('app/tabs/tab3');
+        }else{
+          this.toastServ.toastMsg('Preencha os campos corretamente.');
+          this.router.navigate(['/login']);
+        }
         this.userModel = new User();
-        this.storage.set('userUID', res.user.uid);
-        this.toastServ.toastMsg('Cadastrado com sucesso!');
-        this.router.navigateByUrl('app/tabs/tab3');
-      }else{
+      }).catch((err)=>{
         this.toastServ.toastMsg('Preencha os campos corretamente.');
-        this.router.navigate(['/login']);
-      }
-      this.userModel = new User();
-    }).catch((err)=>{
-      this.toastServ.toastMsg('Preencha os campos corretamente.');
-    });
+      });
+    }else{
+      this.toastServ.toastMsg('Senha divergentes!');
+    }
   }
 
   loginPage() {

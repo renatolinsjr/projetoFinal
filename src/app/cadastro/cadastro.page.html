@@ -21,6 +21,10 @@
         <ion-input class="borda" name="senha" type="password" [(ngModel)]="userModel.senha"></ion-input>
       </ion-item>
       <ion-item>
+        <ion-label position="stacked">Confirmar Senha:</ion-label>
+        <ion-input class="borda" name="senha2" type="password" [(ngModel)]="userModel.senha2"></ion-input>
+      </ion-item>
+      <ion-item>
         <ion-button class="colorBtn" expand="full" type="submit" (click)="insereUsuario(userModel)">Cadastrar</ion-button>
       </ion-item>
       <ion-item>
