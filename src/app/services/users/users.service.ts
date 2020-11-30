@@ -65,21 +65,21 @@ export class UsersService {
   }
 
   async setRiscoColor(classUser) {
-    if (classUser >= 12 && classUser <= 16) {
+    if (classUser >= 12.1 && classUser <= 16) {
       this.resClassification = {
         classificaCor: 'classiAlto',
         myClassification: 'Alto Risco',
       }
       this.saveUserClassification(this.resClassification);
       return this.resClassification;
-    } else if (classUser >= 6 && classUser <= 12) {
+    } else if (classUser >= 6.1 && classUser <= 12) {
       this.resClassification = {
         classificaCor: 'classiMedio',
         myClassification: 'Medio Risco',
       }
       this.saveUserClassification(this.resClassification);
       return this.resClassification;
-    } else if (classUser >= 1 && classUser <= 7) {
+    } else if (classUser >= 1 && classUser <= 6) {
       this.resClassification = {
         classificaCor: 'classBaixo',
         myClassification: 'Baixo Risco',
